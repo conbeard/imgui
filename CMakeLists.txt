@@ -16,3 +16,4 @@ set (imgui_sources
     imgui_widgets.cpp)
 
 add_library(imgui STATIC ${imgui_sources} ${imgui_headers})
+target_include_directories(glad PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/)
